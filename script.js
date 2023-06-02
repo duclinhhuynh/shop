@@ -13,12 +13,16 @@ if(close){
     })
 }
 
+const modal = document.querySelector('#modal');
 const wrapper = document.querySelector('#wrapper');
 const loginlink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const btnlogin = document.querySelector('.btnlogin-popup');
 const closelogin = document.querySelector('.close');
 
+modal.addEventListener('click', () => {
+    modal.style.display = 'none'
+  })
 registerLink.addEventListener('click', () => {
     wrapper.classList.add('active_login');
 });
@@ -29,6 +33,7 @@ loginlink.addEventListener('click', () => {
 
 btnlogin.addEventListener('click', () => {
     wrapper.classList.add('active-popup');
+    modal.style.display='flex'
 });
 closelogin.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup')
