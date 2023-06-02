@@ -1,3 +1,57 @@
+<?php
+
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+$id = $_SESSION['id'];
+
+if(!isset($user_id)){
+   header('location:login.php');
+};
+
+if(isset($_GET['logout'])){
+   unset($user_id);
+   session_destroy();
+   header('location:login.php');
+};
+
+if(isset($_POST['add_to_cart'])){
+
+   $product_name = $_POST['product_name'];
+   $product_price = $_POST['product_price'];
+   $product_image = $_POST['product_image'];
+   $product_quantity = $_POST['product_quantity'];
+
+   $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
+
+   if(mysqli_num_rows($select_cart) > 0){
+      $message[] = 'product already added to cart!';
+   }else{
+      mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, image, quantity) VALUES('$user_id', '$product_name', '$product_price', '$product_image', '$product_quantity')") or die('query failed');
+      $message[] = 'product added to cart!';
+   }
+
+};
+
+if(isset($_POST['update_cart'])){
+   $update_quantity = $_POST['cart_quantity'];
+   $update_id = $_POST['cart_id'];
+   mysqli_query($conn, "UPDATE `cart` SET quantity = '$update_quantity' WHERE id = '$update_id'") or die('query failed');
+   $message[] = 'cart quantity updated successfully!';
+}
+
+if(isset($_GET['remove'])){
+   $remove_id = $_GET['remove'];
+   mysqli_query($conn, "DELETE FROM `cart` WHERE id = '$remove_id'") or die('query failed');
+   header('location:index.php');
+}
+  
+if(isset($_GET['delete_all'])){
+   mysqli_query($conn, "DELETE FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+   header('location:index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +66,7 @@
 <body>
     <!-- hearder -->
     <section id="header">
-        <a href=""><img src="img/logo.png" alt=""></a>
+        <a href=""><img src="img/j.png" alt=""></a>
         <div>
             <ul id="navbar">
                 <!-- mặc định Home -->
@@ -37,9 +91,54 @@
         <p>Save more width coupon & up to 70% off</p>
     </section>
 
+    <section id="prodetails" class="section-p1">
+    <?php
+            $select_product = mysqli_query($conn, "SELECT * FROM `products` where `id` = $id") or die('query failed');
+            if(mysqli_num_rows($select_product) > 0){
+                $fetch_product = mysqli_fetch_assoc($select_product);
+            };
+        ?>
+        <div class="single-pro-image">
+            <img src="img/products/<?php echo $fetch_product['image']; ?>" width="100%" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/<?php echo $fetch_product['image']; ?>" width="100%" class="small-img"alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/<?php echo $fetch_product['image']; ?>" width="100%" class="small-img"alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/<?php echo $fetch_product['image']; ?>" width="100%" class="small-img"alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/<?php echo $fetch_product['image']; ?>" width="100%" class="small-img"alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6 class="name"><?php echo $fetch_product['name']; ?></h6>
+            <h4 class="description"><?php echo $fetch_product['description']; ?></h4>
+            <h2 class="price"><?php echo $fetch_product['price']; ?></h2>
+            <select name="" id="">
+                <option value="">Select Size</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="number">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>ad.csdafah .sdfaheoe heowehfwefwoi</span>
+        </div>  
+        <?php
+        ?>
+    </section>
+
     <section id="product1" class="section-p1">
         <div class="pro-container">
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='sproduct.html'">
                 <div class="des-border">    
                     <img src="img/products/f6.jpg" alt="">
                 </div>
@@ -348,12 +447,6 @@
         </div>
     </section>
 
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-right-long"></i></a>
-    </section>
-    
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up Newsletter</h4>
@@ -421,6 +514,23 @@
             <p>@2023</p>
         </div>
     </footer>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;           
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;           
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;           
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;           
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

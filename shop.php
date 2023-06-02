@@ -12,16 +12,15 @@
 <body>
     <!-- hearder -->
     <section id="header">
-        <a href=""><img src="img/logo.png" alt=""></a>
+        <a href=""><img src="img/j.png" alt=""></a>
         <div>
             <ul id="navbar">
                 <!-- mặc định Home -->
-                <li><a class ="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class ="active" href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="btnlogin-popup" href="#" >Login</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <!-- close  nav-->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -33,102 +32,12 @@
         </div>
     </section>  
 
-    <section id="wrapper">
-        <span class="icon-close">
-            <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
-        </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required>   
-                    <label for="">Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
-                    <label for="">Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label for=""><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account <a href="#" class="register-link">
-                    Resgister
-                    </a></p>
-                </div>
-            </form>
-        </div>
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-user"></i></span>
-                    <input type="UserName" required>   
-                    <label for="">UserName</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" required>   
-                    <label for="">Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" required>
-                    <label for="">Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label for=""><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password</a>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Don't have an account <a href="#" class="login-link">
-                    Login
-                    </a></p>
-
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Supper value deals</h2>
-        <h1>On all productst</h1>
+    <section id="page-header">
+        <h2>#Stay Home</h2>
         <p>Save more width coupon & up to 70% off</p>
-        <button>Shop now</button>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
     </section>
 
     <section id="product1" class="section-p1">
-        <h2>Fetured Product</h2>
-        <p>Summer Collection New Morden Design</p>
         <div class="pro-container">
             <div class="pro">
                 <div class="des-border">    
@@ -292,19 +201,6 @@
                 </div>
                 <a href="#"><i class="fa-regular fa-plus fa-lg cart"></i></a>
             </div>
-        </div>
-    </section>
-
-    <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-        <h2>Up to <span>70% Off</span> All t-shirt & Accessories</h2>
-        <button class="normal">Explore More</button>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Morden Design</p>
-        <div class="pro-container">
             <div class="pro">
                 <div class="des-border">    
                     <img src="img/products/n1.jpg" alt="">
@@ -452,40 +348,12 @@
         </div>
     </section>
 
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box-permanent">
-            <div class="banner-box">
-                <h4>crazy deals</h4>
-                <h2>buy 1 get 1 free</h2>
-                <span>The best classic dress is on sale at care</span>
-                <button class="white">Learn More</button>
-            </div>
-        </div>
-        <div class="banner-box-permanent">
-            <div class="banner-box banner-box2">
-                    <h4>crazy deals</h4>
-                    <h2>buy 1 get 1 free</h2>
-                    <span>The best classic dress is on sale at care</span>
-                    <button class="white">Learn More</button>
-            </div>
-        </div>
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-right-long"></i></a>
     </section>
-
-    <section id="banner3">
-        <div class="banner-box">
-            <h2>SEASONAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-        </div>
-        <div class="banner-box banner-box2">
-            <h2>SEASONAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-        </div>
-        <div class="banner-box banner-box3">
-            <h2>SEASONAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-        </div>
-    </section>
-
+    
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up Newsletter</h4>

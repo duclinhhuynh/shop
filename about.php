@@ -12,15 +12,16 @@
 <body>
     <!-- hearder -->
     <section id="header">
-        <a href=""><img src="img/logo.png" alt=""></a>
+        <a href=""><img src="img/j.png" alt=""></a>
         <div>
             <ul id="navbar">
                 <!-- mặc định Home -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a class ="active" href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class ="active" href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a class="btnlogin-popup" href="#" >Login</a></li> -->
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <!-- close  nav-->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -32,64 +33,60 @@
         </div>
     </section>  
 
-    <section id="page-header" class="blog-header">
-        <h2>#Stay Home</h2>
-        <p>Save more width coupon & up to 70% off</p>
+    <section id="page-header" class="about-header">
+        <h2>#Know us</h2>
+        <p>Lorem ispum dolor sit amet, consectetur</p>
     </section>
 
-    <section id="blog">
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b1.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The cotton-jer Zip up Hoodies</h4>
-                <p>Kickstarter man braid </p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13-5</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b2.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The cotton-jer Zip up Hoodies</h4>
-                <p>Kickstarter man braid </p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13-5</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b3.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The cotton-jer Zip up Hoodies</h4>
-                <p>Kickstarter man braid </p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13-5</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b4.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The cotton-jer Zip up Hoodies</h4>
-                <p>Kickstarter man braid </p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13-5</h1>
+    <section id="about-head" class="section-p1">
+        <img src="img/about/a6.jpg" alt="">
+        <div>
+            <h2>Why We Are?</h2>
+            <p>Lorem ispum dolor sit amet, consectetur adispising elit, sed do eiusmod
+               tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
+               nostrud exercitation tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
+               nostrud exercitation tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
+               nostrud exercitation 
+            </p>
+            <abbr title="">Create stunning consectetur adispising elit, sed do eiusmod
+                tempor incidiunt ut labore et dolore mana aliqua</abbr>
+            <br><br>
+            <!-- chữ chạy -->
+            <marquee bgcolor ="#ccc" loop ="-1" scrollamount = "5" width = "100%">Create stunning consectetur adispising elit, sed do eiusmod
+                tempor incidiunt ut labore et dolore mana aliqua</marquee>
         </div>
     </section>
 
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-right-long"></i></a>
+    <section id="about-app" class="section-p1">
+        <h1>Dowload Our <a href="#">App</a></h1>
+        <div class="video">
+            <video autoplay muted loop src="img/about/john.mp4"></video>
+        </div>
     </section>
-    
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Online order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+    </section>
+
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up Newsletter</h4>

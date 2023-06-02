@@ -12,17 +12,16 @@
 <body>
     <!-- hearder -->
     <section id="header">
-        <a href=""><img src="img/logo.png" alt=""></a>
+        <a href=""><img src="img/j.png" alt=""></a>
         <div>
             <ul id="navbar">
                 <!-- mặc định Home -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class ="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="btnlogin-popup" href="#" >Login</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag" class ="active" ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <!-- close  nav-->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -34,59 +33,79 @@
     </section>  
 
     <section id="page-header" class="about-header">
-        <h2>#Know us</h2>
-        <p>Lorem ispum dolor sit amet, consectetur</p>
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-        <img src="img/about/a6.jpg" alt="">
-        <div>
-            <h2>Why We Are?</h2>
-            <p>Lorem ispum dolor sit amet, consectetur adispising elit, sed do eiusmod
-               tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
-               nostrud exercitation tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
-               nostrud exercitation tempor incidiunt ut labore et dolore mana aliqua. Ut enim ad minim venium, quis
-               nostrud exercitation 
-            </p>
-            <abbr title="">Create stunning consectetur adispising elit, sed do eiusmod
-                tempor incidiunt ut labore et dolore mana aliqua</abbr>
-            <br><br>
-            <!-- chữ chạy -->
-            <marquee bgcolor ="#ccc" loop ="-1" scrollamount = "5" width = "100%">Create stunning consectetur adispising elit, sed do eiusmod
-                tempor incidiunt ut labore et dolore mana aliqua</marquee>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width = 100%>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts </td>
+                    <td>$188.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$188.19</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts </td>
+                    <td>$188.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$188.19</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts </td>
+                    <td>$188.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$188.19</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1>Dowload Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="img/about/john.mp4"></video>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Totals</strong></td>
+                    <td><strong>$ 355</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-    </section>
-
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up Newsletter</h4>

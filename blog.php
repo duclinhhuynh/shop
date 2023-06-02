@@ -12,16 +12,16 @@
 <body>
     <!-- hearder -->
     <section id="header">
-        <a href=""><img src="img/logo.png" alt=""></a>
+        <a href=""><img src="img/j.png" alt=""></a>
         <div>
             <ul id="navbar">
                 <!-- mặc định Home -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a class ="active" href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag" class ="active" ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <!-- close  nav-->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -32,80 +32,64 @@
         </div>
     </section>  
 
-    <section id="page-header" class="about-header">
-        <h2>#let's_talk</h2>
-        <p>LEAVE A MESSAGE, We love to hear from you</p>
+    <section id="page-header" class="blog-header">
+        <h2>#Stay Home</h2>
+        <p>Save more width coupon & up to 70% off</p>
     </section>
 
-    <section id="cart" class="section-p1">
-        <table width = 100%>
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-shirts </td>
-                    <td>$188.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$188.19</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-shirts </td>
-                    <td>$188.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$188.19</td>
-                </tr>
-                <tr>
-                    <td><i class="far fa-times-circle"><a href="#"></a></i></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon Astronaut T-shirts </td>
-                    <td>$188.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$188.19</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="cart-add" class="section-p1">
-        <div id="coupon">
-            <h3>Apply coupon</h3>
-            <div>
-                <input type="text" placeholder="Enter Your Coupon">
-                <button class="normal">Apply</button>
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b1.jpg" alt="">
             </div>
+            <div class="blog-details">
+                <h4>The cotton-jer Zip up Hoodies</h4>
+                <p>Kickstarter man braid </p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13-5</h1>
         </div>
-
-        <div id="subtotal">
-            <h3>Cart Totals</h3>
-            <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$ 335</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Totals</strong></td>
-                    <td><strong>$ 355</strong></td>
-                </tr>
-            </table>
-            <button class="normal">Proceed to checkout</button>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The cotton-jer Zip up Hoodies</h4>
+                <p>Kickstarter man braid </p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13-5</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The cotton-jer Zip up Hoodies</h4>
+                <p>Kickstarter man braid </p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13-5</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The cotton-jer Zip up Hoodies</h4>
+                <p>Kickstarter man braid </p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>13-5</h1>
         </div>
     </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-right-long"></i></a>
+    </section>
+    
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up Newsletter</h4>
